@@ -7,152 +7,57 @@
     <title>Jenkins AI Scribe Project</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            background: linear-gradient(to right, #f4f4f4, #e0eafc);
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-
-        header {
-            background: linear-gradient(to right, #007acc, #00b4db);
-            color: #fff;
-            padding: 2rem 0;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
-
-        nav {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #007acc;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #00b4db;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: 3rem auto;
-            padding: 3rem;
-            background: #fff;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
-
-        section {
-            margin-bottom: 2.5rem;
-        }
-
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #007acc;
-            border-bottom: 2px solid #00b4db;
-            display: inline-block;
-            padding-bottom: 0.5rem;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            background: #f0f8ff;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background: linear-gradient(to right, #007acc, #00b4db);
-            color: #fff;
-            margin-top: 30px;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 20px;
-            background: #007acc;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        .button:hover {
-            background: #00b4db;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nextui-org/react@latest/dist/nextui.min.css">
 </head>
 
 <body>
-    <header>
-        <h1>Jenkins AI Scribe Project</h1>
+    <header style="background: linear-gradient(to right, #007acc, #00b4db); color: #fff; padding: 2rem 0; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <h1 style="font-size: 2.5rem; margin: 0;">Jenkins AI Scribe Project</h1>
     </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#team">Team</a>
-        <a href="#contact">Contact</a>
+    <nav style="text-align: center; margin-top: 10px;">
+        <a href="#about" class="nextui-link" style="margin: 0 15px; font-weight: bold;">About</a>
+        <a href="#features" class="nextui-link" style="margin: 0 15px; font-weight: bold;">Features</a>
+        <a href="#team" class="nextui-link" style="margin: 0 15px; font-weight: bold;">Team</a>
+        <a href="#contact" class="nextui-link" style="margin: 0 15px; font-weight: bold;">Contact</a>
     </nav>
 
-    <div class="container">
-        <section id="about">
-            <h2>About the Project</h2>
+    <div class="nextui-container" style="max-width: 960px; margin: 3rem auto; padding: 3rem; background: #fff; border-radius: 15px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);">
+        <section id="about" style="margin-bottom: 2.5rem;">
+            <h2 class="nextui-heading" style="font-size: 2rem; margin-bottom: 1rem; color: #007acc; border-bottom: 2px solid #00b4db; display: inline-block; padding-bottom: 0.5rem;">About the Project</h2>
             <p>The Jenkins AI Scribe project is designed to implement a cutting-edge AI scribe in the emergency departments of a large health system. Our goal is to streamline documentation processes and improve the quality of patient care by leveraging AI technologies.</p>
         </section>
 
-        <section id="features">
-            <h2>Features</h2>
-            <ul>
-                <li><i class="fas fa-notes-medical"></i> Real-time scribing for emergency department clinicians</li>
-                <li><i class="fas fa-file-medical"></i> Automatic integration with patient medical records</li>
-                <li><i class="fas fa-globe"></i> Support for multi-language transcription</li>
-                <li><i class="fas fa-lock"></i> Secure and HIPAA-compliant architecture</li>
+        <section id="features" style="margin-bottom: 2.5rem;">
+            <h2 class="nextui-heading" style="font-size: 2rem; margin-bottom: 1rem; color: #007acc; border-bottom: 2px solid #00b4db; display: inline-block; padding-bottom: 0.5rem;">Features</h2>
+            <ul class="nextui-list" style="list-style: none; padding: 0;">
+                <li style="background: #f0f8ff; margin: 10px 0; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                    <i class="fas fa-notes-medical"></i> Real-time scribing for emergency department clinicians
+                </li>
+                <li style="background: #f0f8ff; margin: 10px 0; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                    <i class="fas fa-file-medical"></i> Automatic integration with patient medical records
+                </li>
+                <li style="background: #f0f8ff; margin: 10px 0; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                    <i class="fas fa-globe"></i> Support for multi-language transcription
+                </li>
+                <li style="background: #f0f8ff; margin: 10px 0; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                    <i class="fas fa-lock"></i> Secure and HIPAA-compliant architecture
+                </li>
             </ul>
         </section>
 
-        <section id="team">
-            <h2>Our Team</h2>
+        <section id="team" style="margin-bottom: 2.5rem;">
+            <h2 class="nextui-heading" style="font-size: 2rem; margin-bottom: 1rem; color: #007acc; border-bottom: 2px solid #00b4db; display: inline-block; padding-bottom: 0.5rem;">Our Team</h2>
             <p>We are a dedicated group of medical professionals, data scientists, and software engineers collaborating to enhance healthcare delivery using artificial intelligence.</p>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>If you would like to learn more about the Jenkins AI Scribe project or get involved, please <a href="mailto:contact@jenkinsaiscribe.org" class="button">email us</a>.</p>
+        <section id="contact" style="margin-bottom: 2.5rem;">
+            <h2 class="nextui-heading" style="font-size: 2rem; margin-bottom: 1rem; color: #007acc; border-bottom: 2px solid #00b4db; display: inline-block; padding-bottom: 0.5rem;">Contact Us</h2>
+            <p>If you would like to learn more about the Jenkins AI Scribe project or get involved, please <a href="mailto:contact@jenkinsaiscribe.org" class="nextui-button nextui-button--primary" style="margin-top: 20px;">email us</a>.</p>
         </section>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Jenkins AI Scribe Project. All rights reserved.</p>
+    <footer style="text-align: center; padding: 2rem; background: linear-gradient(to right, #007acc, #00b4db); color: #fff; margin-top: 30px; box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);">
+        <p style="margin: 0;">&copy; 2024 Jenkins AI Scribe Project. All rights reserved.</p>
     </footer>
 </body>
 
